@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+.board{
+    transform: translate(-50%);
+    margin-left: 56.5%;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows:  repeat(3,150px);
+    gap: 15px;
+    
+}
+
+.cell{
+    background-color: #8a2be2;
+    border: 3px solid rgb(221, 2, 2);
+    align-items:  center;
+    font-size: 64px;
+    cursor: pointer;
+    font-family: sans-serif; 
+    text-align: center;
+    color: #f0f8ff;
+    padding-top: 30px;
+}
+
+body{
+    background-color: #000000;
+}
+
+@font-face{
+    font-family: [fonte1];
+    src: url(/supercharge.ttf);
+
+}
+
+h1{
+    color: #1550f3;
+    background: linear-gradient(225deg, #f0f8ff, #f0f8ff);
+    box-shadow: -35px 35px 70px #f0f8ff, 35px -35px 70px #f0f8ff;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5%;
+    /* background-color: #f0f8ff; */
+    border-radius: 90%;
+    
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: #00ffff;
+    border-radius: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+.github{
+    width: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.insta{
+    width: 30px;
+    right: 30px;
+    margin: 5px;
+}
+
+.gitlink{
+    color: #292f3a;
+}
+
+.instalink{
+    color: #292f3a;
+}
+
+.seta{
+    width: 30px;
+    right: 30px;
+}
+
+.piscada{
+    -webkit-animation: piscada 2.5s linear both;
+    animation: piscada 2.5s linear both;
+}
+
+@keyframes piscada {
+    0%{
+        opacity: 1;
+    }
+
+    13.9%{
+        opacity: 1;
+    } 
+
+    14%{
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    14.9%{
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    15%{
+        opacity: 1;
+    }
+
+    22.9%{
+        opacity: 1;
+    }
+
+    23%{
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    24.9%{
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    25%{
+        opacity: 1;
+    }
+
+    35%{
+        opacity: 0;
+        text-shadow: none;
+    }
+    
+    39.9%{
+        opacity: 0;
+        text-shadow: none;
+    }
+
+
+
+    
+}
